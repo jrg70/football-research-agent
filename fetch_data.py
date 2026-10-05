@@ -26,7 +26,7 @@ def main():
             dest = DATA_DIR / season / f"{league}.csv"
             url = URL.format(season=season, league=league)
             try:
-                req = urllib.request.Request(url, headers={"User-Agent": "betting-research-agent"})
+                req = urllib.request.Request(url, headers={"User-Agent": "football-research-agent"})
                 with urllib.request.urlopen(req, timeout=30) as r:
                     dest.write_bytes(r.read())
                 print(f"ok    {season} {league}")

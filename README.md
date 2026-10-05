@@ -1,4 +1,4 @@
-# Betting Research Agent
+# Football Research Agent
 
 A small, readable example of **agentic AI**: you ask a football betting question in plain English, and Claude researches it by deciding on its own which analysis tools to call, in what order, and when it has enough evidence to stop.
 
@@ -81,3 +81,7 @@ python -m unittest discover -s tests -v
 - Model: `claude-opus-5-5`, with server-side refusal fallbacks enabled.
 - Data: [football-data.co.uk](https://www.football-data.co.uk/). Please respect their terms; the data is not redistributed here.
 - This is a demo of agent design, **not betting advice**. Closing lines are very efficient, and the agent will usually tell you so.
+
+## License
+
+[MIT](LICENSE)
